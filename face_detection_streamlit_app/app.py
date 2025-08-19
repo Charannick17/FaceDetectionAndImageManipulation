@@ -108,11 +108,12 @@ if mode == "Image":
         c1, c2 = st.columns(2)
         with c1:
             st.subheader("Original")
-            st.image(convert_bgr_to_rgb(image), channels="RGB", use_column_width=True)
+            st.image(convert_bgr_to_rgb(image), channels="RGB", use_container_width=True)
             st.caption(f"Detected faces: {len(faces)}")
-        with c2:
-            st.subheader("Processed")
-            st.image(convert_bgr_to_rgb(processed), channels="RGB", use_column_width=True)
+    with c2:
+        st.subheader("Processed")
+        st.image(convert_bgr_to_rgb(processed), channels="RGB", use_container_width=True)
+
 
         # Crops
         if do_crop and len(faces) > 0:
