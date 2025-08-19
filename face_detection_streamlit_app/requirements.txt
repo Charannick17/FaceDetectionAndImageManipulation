@@ -3,4 +3,4 @@ torchvision
 opencv-python
 numpy
 Pillow
-curl -L -o 
+streamlit-webrtc
