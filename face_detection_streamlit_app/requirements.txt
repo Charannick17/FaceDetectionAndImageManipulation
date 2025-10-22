@@ -1,7 +1,6 @@
-streamlit>=1.38
+torch
+torchvision
+opencv-python-headless
 numpy
-pandas
-opencv-python
-mediapipe
-pillow
-scikit-learn
+Pillow
+streamlit-webrtc
